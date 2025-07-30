@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Reading Practice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #ffffff);
+    }
+
+    .header {
+      background-color: #0077cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeInDown 1s;
+    }
+
+    .split-container {
+      display: flex;
+      height: calc(100vh - 80px);
+      overflow: hidden;
+    }
+
+    .left-pane, .right-pane {
+      width: 50%;
+      padding: 20px;
+      overflow-y: auto;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .right-pane {
+      background: #f9f9f9;
+      border-left: 2px solid #e0e0e0;
+    }
+
+    .left-pane {
+      background: #ffffff;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    input[type="text"] {
+      width: 50%;
+      padding: 6px;
+      margin: 5px 0 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    #results {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f1f1f1;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .telegram-link {
+      color: #0077cc;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .telegram-link:hover {
+      text-decoration: underline;
+    }
+
+    .telegram-logo {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header animate__animated animate__fadeInDown">
+    <h1>IELTS Reading Practice Test</h1>
+  </div>
+
+  <div class="split-container">
+    <div class="left-pane animate__animated animate__fadeInLeft">
+      <h2>Reading Passage: The Rise of Urban Farming</h2>
+      <p>In recent years, urban farming has gained significant popularity across many cities worldwide. Once considered an unusual hobby, it is now a practical solution for addressing issues such as food insecurity, climate change, and urban unemployment.</p>
+      <p>Urban farming refers to the practice of cultivating, processing, and distributing food in or around urban areas. It includes rooftop gardens, vertical farms, community plots, and hydroponic systems that do not require soil. These methods make it possible to grow food in limited spaces using less water and energy than traditional agriculture.</p>
+      <p>One of the key benefits of urban farming is its environmental impact. Growing food locally reduces the need for long-distance transportation, thus cutting greenhouse gas emissions. Moreover, green spaces help reduce urban heat islands—areas that are significantly warmer than surrounding regions due to human activities and infrastructure.</p>
+      <p>Urban farms also promote community development. They can create jobs, especially for marginalized communities, and offer educational opportunities. For example, students can learn biology and sustainability by growing vegetables at school. Elderly individuals can also benefit from gardening, as it offers physical activity and social interaction.</p>
+      <p>Despite the advantages, urban farming faces challenges. Land availability is a major issue in densely populated cities. Additionally, obtaining permits and ensuring compliance with city regulations can be time-consuming. There is also a lack of widespread knowledge about advanced farming techniques among urban residents.</p>
+      <p>Nevertheless, the trend is expected to grow. With increasing awareness about healthy eating and sustainable living, urban farming may become a common feature of modern cities, offering both environmental and social rewards.</p>
+    </div>
+
+    <div class="right-pane animate__animated animate__fadeInRight">
+      <form id="test-form">
+        <h2>Fill in the blanks</h2>
+        <ol>
+          <li>Urban farming can help tackle problems like <input type="text" name="q1"> and joblessness.</li>
+          <li><input type="text" name="q2"> are an example of farming without the use of soil.</li>
+          <li>One environmental benefit of urban farming is reducing <input type="text" name="q3"> caused by food transport.</li>
+          <li><input type="text" name="q4"> is a group that benefits from gardening by staying active and engaged.</li>
+          <li>A lack of <input type="text" name="q5"> among city dwellers can make farming difficult.</li>
+        </ol>
+
+        <h2>Multiple Choice</h2>
+        <ol start="6">
+          <li>
+            What is the main idea of the passage?<br>
+            <label><input type="radio" name="q6" value="A"> A. Urban areas are better for farming</label><br>
+            <label><input type="radio" name="q6" value="B"> B. Urban farming is growing with benefits</label><br>
+            <label><input type="radio" name="q6" value="C"> C. Traditional farming is outdated</label><br>
+            <label><input type="radio" name="q6" value="D"> D. Farming is only for environmentalists</label>
+          </li>
+          <li>
+            What is a potential difficulty for urban farmers?<br>
+            <label><input type="radio" name="q7" value="A"> A. Too much rainfall</label><br>
+            <label><input type="radio" name="q7" value="B"> B. High costs of vegetables</label><br>
+            <label><input type="radio" name="q7" value="C"> C. Getting approval from authorities</label><br>
+            <label><input type="radio" name="q7" value="D"> D. Lack of interest in farming</label>
+          </li>
+          <li>
+            What does the writer suggest about the future of urban farming?<br>
+            <label><input type="radio" name="q8" value="A"> A. It may decline</label><br>
+            <label><input type="radio" name="q8" value="B"> B. It will be regulated</label><br>
+            <label><input type="radio" name="q8" value="C"> C. It may spread</label><br>
+            <label><input type="radio" name="q8" value="D"> D. It will stay the same</label>
+          </li>
+        </ol>
+
+        <h2>Matching</h2>
+        <p>Match the following features (A–E) with the benefits they offer (9–13). Write the correct letter A–E in the blanks.</p>
+        <p>Features:<br>
+        A. Rooftop gardens<br>
+        B. Local food production<br>
+        C. Community farms<br>
+        D. School gardens<br>
+        E. Elderly gardening programs</p>
+        <ul>
+          <li>9. _____ Provide education in biology and ecology <input type="text" name="q9" maxlength="1"></li>
+          <li>10. _____ Encourage physical and social activity for seniors <input type="text" name="q10" maxlength="1"></li>
+          <li>11. _____ Use previously unused space in cities <input type="text" name="q11" maxlength="1"></li>
+          <li>12. _____ Reduce emissions from food delivery <input type="text" name="q12" maxlength="1"></li>
+          <li>13. _____ Help bring people together and create jobs <input type="text" name="q13" maxlength="1"></li>
+        </ul>
+
+        <button type="button" onclick="checkAnswers()">Check Answers</button>
+        <div id="results"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-logo" alt="Telegram">
+    <a href="https://t.me/learning_english_naturally" target="_blank" class="telegram-link">@learning_english_naturally</a>
+    <span>| Created by Doniyorbek Sapoyev</span>
+  </div>
+
+  <script>
+    function checkAnswers() {
+      const correctAnswers = {
+        q1: "food insecurity",
+        q2: "Hydroponic systems",
+        q3: "greenhouse gas emissions",
+        q4: "Elderly individuals",
+        q5: "farming techniques",
+        q6: "B",
+        q7: "C",
+        q8: "C",
+        q9: "D",
+        q10: "E",
+        q11: "A",
+        q12: "B",
+        q13: "C"
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (const key in correctAnswers) {
+        const input = document.querySelector(`[name="${key}"]`);
+        let answer = (input?.value || "").trim().toLowerCase();
+        let correct = correctAnswers[key].toLowerCase();
+        if (answer === correct) score++;
+      }
+
+      let band = 0;
+      if (score >= 12) band = 9;
+      else if (score >= 10) band = 8;
+      else if (score >= 8) band = 7;
+      else if (score >= 6) band = 6;
+      else if (score >= 4) band = 5;
+      else band = 4;
+
+      document.getElementById("results").innerHTML = `✅ You got ${score} out of ${total} correct. Estimated IELTS Band: <strong>${band}</strong>`;
+    }
+  </script>
+</body>
+</html>
